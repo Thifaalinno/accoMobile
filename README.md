@@ -29,3 +29,47 @@ StatelessWidget digunakan untuk widget yang tidak perlu berubah atau memiliki st
 2.Membuat file baru menu.dart
 3.Mengubah file main.dart
 4.Mengubah file menu.dart
+
+Tugas 8
+
+1. Jelaskan perbedaan antara Navigator.push() dan Navigator.pushReplacement(), disertai dengan contoh mengenai penggunaan kedua metode tersebut yang tepat!
+1.Navigator.push:
+-Metode ini digunakan untuk menambahkan layar baru ke tumpukan (stack) navigasi.
+-Ketika menggunakan Navigator.push(), layar baru ditambahkan di atas layar yang ada di tumpukan, dan pengguna dapat kembali ke layar sebelumnya dengan menekan tombol kembali.
+-Cocok digunakan ketika ingin menambahkan layar baru dan memungkinkan pengguna untuk kembali ke layar sebelumnya.
+2.Navigator.pushReplacement():
+-Metode ini digunakan untuk menambahkan layar baru ke tumpukan dan menggantikan layar yang ada di tumpukan dengan layar baru.
+-Ketika menggunakan Navigator.pushReplacement(), layar yang ada di bawah layar baru dihapus dari tumpukan, sehingga ketika pengguna menekan tombol kembali, mereka langsung kembali ke layar sebelumnya sebelum layar yang baru ditambahkan.
+-Cocok digunakan ketika ingin menggantikan layar saat ini dengan layar baru dan tidak ingin pengguna kembali ke layar sebelumnya.
+
+2. Jelaskan masing-masing layout widget pada Flutter dan konteks penggunaannya masing-masing!
+-Container : Digunakan untuk mengelompokkan widget lain dan mengatur terhadap layout attribute seperti margin dan padding.
+-Column : Digunakan untuk menampilkan widget dalam susunan vertikal.
+-Row : Digunakan untuk menampilkan widget dalam susunan horizontal.
+-ListView : Digunakan untuk menampilkan daftar elemen scrollable.
+-Stack : Digunakan untuk "menumpuk" widget satu di atas yang lain.
+
+3. Sebutkan apa saja elemen input pada form yang kamu pakai pada tugas kali ini dan jelaskan mengapa kamu menggunakan elemen input tersebut!
+Pada tugas kali ini saya hanya menggunakan TextFormField() karena pada tugas kali ini hanya membutuhkan input berupa String dan integer.
+
+4. Bagaimana penerapan clean architecture pada aplikasi Flutter?
+Penerapannya dibagi menjadi 3 lapisan utama:
+
+1.Domain Layer:
+-Berisi aturan bisnis atau logika inti aplikasi.
+-Tidak bergantung pada detail implementasi atau teknologi tertentu.
+-Termasuk use case, entitas, dan repositori yang menentukan kontrak untuk mengakses data.
+2.Data Layer:
+-Menangani pengambilan dan penyimpanan data.
+-Implementasi dari repositori dan sumber data (API, database, dll.)
+-Merupakan jembatan antara Domain Layer dan Presentation Layer.
+3.Presentation Layer:
+-Menangani tampilan dan antarmuka pengguna.
+-Bergantung pada Domain Layer, tetapi tidak mengetahui detail implementasi Data Layer.
+-State management, UI, dan navigasi berada di dalamnya.
+
+5. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step! (bukan hanya sekadar mengikuti tutorial)
+
+1.membuat file BackPackForm.dart didalam folder lib/screens 
+2.Menambahkan routing pada item_cards.dart dan left_drawer.dart
+
