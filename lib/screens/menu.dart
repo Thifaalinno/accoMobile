@@ -6,7 +6,7 @@ class MyHomePage extends StatelessWidget {
   MyHomePage({Key? key}) : super(key: key);
 
   final List<ShopItem> items = [
-    ShopItem("Lihat Isi Tas", Icons.checklist, Colors.lightBlue),
+    ShopItem("Lihat Item", Icons.checklist, Colors.indigo),
     ShopItem("Tambah Item", Icons.add_shopping_cart, Colors.blueGrey),
     ShopItem("Logout", Icons.logout, Colors.red),
   ];
@@ -25,9 +25,9 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'ShoppingList',
+          'StorageItem',
         ),
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: Colors.indigo,
         foregroundColor: Colors.white,
       ),
       drawer: const LeftDrawer(),
@@ -42,7 +42,7 @@ class MyHomePage extends StatelessWidget {
                 padding: EdgeInsets.only(top: 10.0, bottom: 10.0),
                 // Widget Text untuk menampilkan tulisan dengan alignment center dan style yang sesuai
                 child: Text(
-                  'Thifaal Shop', // Text yang menandakan Inventory
+                  'TipalStore', // Text yang menandakan Inventory
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 30,

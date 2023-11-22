@@ -18,7 +18,7 @@ class LeftDrawer extends StatelessWidget {
             child: Column(
               children: [
                 Text(
-                  'BackPacker',
+                  'TipalStore',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 30,
@@ -27,7 +27,7 @@ class LeftDrawer extends StatelessWidget {
                   ),
                 ),
                 Padding(padding: EdgeInsets.all(10)),
-                Text("Solusi Untuk Kamu Yang Pelupa!",
+                Text("Menyimpan Kebutuhan Perjalanan Anda",
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 15,
@@ -63,7 +63,7 @@ class LeftDrawer extends StatelessWidget {
           ),
           ListTile(
             leading: const Icon(Icons.checklist_outlined),
-            title: const Text('Lihat Isi Tas'),
+            title: const Text('Lihat Item'),
             onTap: () {
               Navigator.pushReplacement(
                 context,
